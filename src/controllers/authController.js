@@ -6,8 +6,8 @@ export const register = async (req, res) => {
     console.log("metodo register");
 
     try {
-        const { username, password } = req.body;
-        const newTrainer = await Trainer.create({ username, password });
+        const { username, password, name, email, age } = req.body;
+        const newTrainer = await Trainer.create({ username, password, name, email, age });
         res.status(201).json({ message: "Entrenador registrado", trainer: newTrainer });
     } catch (error) {
         res.status(500).json({ error: error.message });
