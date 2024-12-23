@@ -1,0 +1,16 @@
+{
+  "name": "pokeapi_nodejs",
+  "version": "1.0.0",
+  "description": "Creación de proyecto pokedex con mongodb y nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Varas Contreras",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2"
+  }
+}
